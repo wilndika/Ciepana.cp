@@ -1,0 +1,312 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.elysee.fr/cdn-cgi/image/format=auto%2Cquality=100%2Cwidth=1920%2Cheight=728%2Ctrim=1113%3B0%3B457%3B0%2Cfit=cover/images/default/0001/17/377b500afbdc28974bd9a65959d2954409a219fd.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Berita */
+.news {
+    padding: 50px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.news h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.news-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-content a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.news-content a:hover {
+    color: #0056b3;
+}
+
+#prioritas {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0a0a23;
+}
+
+.prioritas-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.prioritas-btn {
+    padding: 10px 15px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.prioritas-btn.active {
+    background: black;
+    color: white;
+}
+
+.prioritas-content {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Sesuaikan tinggi gambar */
+    overflow: hidden;
+}
+
+.prioritas-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.prioritas-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Transparan hitam */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+/* Seksi Informasi */
+
+.informasi {
+    padding: 50px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.info-section {
+    padding: 50px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Lebih besar */
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Efek lebih tegas */
+    padding: 20px; /* Lebih luas */
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-card img {
+    width: 100%;
+    height: 250px; /* Gambar lebih tinggi */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.info-card p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 8px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
